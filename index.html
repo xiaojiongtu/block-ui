@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        :root{
-            --button-height:32px;
-            --font-size:14px;
-            --button-bg:#fff;
-            --button-active-bg:#eee;
-            --button-border-radius:4px;
-            --color:#333;
-            --border-color:#333;
-            --border-color-hover:#666;
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: #fff;
+            --button-active-bg: #eee;
+            --button-border-radius: 4px;
+            --color: #333;
+            --border-color: #333;
+            --border-color-hover: #666;
         }
     </style>
     <style>
-
-
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
     </style>
 </head>
 <body>
-  <div id="app">
-      {{test}}
-      <b-button class="b-button"></b-button>
-  </div>
-  <script src="./src/app.js"></script>
+<div id="app">
+    <b-button class="b-button">
+        按钮
+    </b-button>
+    <b-button class="b-button" icon="setting" icon-position="right">
+        按钮
+    </b-button>
+    <b-button class="b-button" icon="setting" icon-position="left">
+        按钮
+    </b-button>
+</div>
+<script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_2374570_te8j2adcshh.js"></script>
+
 </body>
 </html>
