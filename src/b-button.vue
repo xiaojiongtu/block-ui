@@ -1,7 +1,7 @@
 <template>
-    <button class="b-button" :class="{[`icon-${iconPosition}`]:true}">
-         <b-icon v-if="icon" class="icon"  :icon="icon"></b-icon>
-        <b-icon icon="loading" class="loading"></b-icon>
+    <button class="b-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
+         <b-icon v-if="icon && !loading" class="icon"  :icon="icon"></b-icon>
+         <b-icon icon="loading" class="loading icon" v-if="loading"></b-icon>
          <div class="content">
              <slot/>
          </div>
@@ -15,6 +15,10 @@
             icon:{
                 type:String
             },
+            loading:{
+                type:Boolean,
+                default: false
+            },
             iconPosition:{
                 type:String,
                 default:'left',
@@ -23,6 +27,9 @@
                 }
             }
         },
+        methods:{
+
+        }
     }
 </script>
 
@@ -67,6 +74,7 @@
         }
         .loading{
             animation: spin 1.5s infinite linear ;
+            margin-right: 0.3em;
         }
         &.icon-right{
             > .content{
