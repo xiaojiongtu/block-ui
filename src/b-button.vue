@@ -9,8 +9,12 @@
 </template>
 
 <script>
+   import bIcon from './icon'
     export default {
         name: "button",
+        components:{
+          bIcon
+        },
         props: {
             icon:{
                 type:String

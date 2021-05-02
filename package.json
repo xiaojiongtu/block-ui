@@ -4,7 +4,8 @@
   "description": "轮子",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-test": "parcel watch test/* --no-cache & karma start",
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,16 @@
   "dependencies": {
     "chai": "^4.3.4",
     "chai-spies": "^1.0.0",
+    "karma": "^6.3.2",
+    "karma-chai": "^0.1.0",
+    "karma-chai-spies": "^0.1.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "mocha": "^8.3.2",
     "parcel-bundler": "^1.12.4",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.6.0",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4"
   },

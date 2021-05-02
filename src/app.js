@@ -22,7 +22,7 @@ import chai from 'chai'
 import spies from 'chai-spies'
 const expect=chai.expect
 chai.use(spies)
-
+//测试按钮含有icon
 {
 
     let Constructor=Vue.extend(bButton)
@@ -38,6 +38,7 @@ chai.use(spies)
 
 
 }
+
 {
     let Constructor=Vue.extend(bButton)
     let button=new Constructor({
