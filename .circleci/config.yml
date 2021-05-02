@@ -2,7 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10
+      - image: .circleci/node:10
     steps:
       - run: echo "A first hello"
-      - run: yarn run test
+  - run:
+      name: 'test'
+      command: 'parcel build test/* --no-cache --no-minify && karma start --single-run'
