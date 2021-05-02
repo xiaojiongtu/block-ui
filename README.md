@@ -1,4 +1,4 @@
-# block-ui
+# block-ui [![img.png](img.png)](https://img.shields.io/circleci/build/github/xiaojiongtu/block-ui)
 ## 介绍
 ## 开始使用
  1.安装
