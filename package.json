@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/xiaojiongtu/block-ui#readme",
   "dependencies": {
+    "chai": "^4.3.4",
     "parcel-bundler": "^1.12.4",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4"
