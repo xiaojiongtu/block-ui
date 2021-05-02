@@ -2,20 +2,10 @@ language: node_js
 node_js:
   - "8"
   - "9"
-  - "12"
-  - "13"
-  - "14"
+  - "10"
 addons:
   chrome: stable
-
-branchs:
-  only:
-    - main
-cache:
-  directories:
-    - node_modules
-install:
-  - yarn install
-scripts:
-  - yarn test
-
+sudo: required
+before_script:
+  - "sudo chown root /opt/google/chrome/chrome-sandbox"
+  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
