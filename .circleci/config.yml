@@ -5,4 +5,4 @@ jobs:
       - image: circleci/node:10
     steps:
       - run: echo "A first hello"
-      - run: npm test
+      - run: yarn run test
