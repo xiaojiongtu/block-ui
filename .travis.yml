@@ -10,5 +10,14 @@ node_js:
 addons:
   chrome: stable
 
-sudo:required
+branchs:
+  only:
+    - main
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn install
+scripts:
+  - yarn test
 
