@@ -5,6 +5,6 @@ jobs:
       - image: circleci/node:10
     steps:
       - run: echo "A first hello"
-  - run:
-      name: 'test'
-      command: 'parcel build test/* --no-cache --no-minify && karma start --single-run'
+      - run:
+          name: npm run test
+          command: echo "npm run test"
