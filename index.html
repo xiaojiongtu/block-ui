@@ -17,9 +17,10 @@
             --button-active-bg: #eee;
             --button-border-radius: 4px;
             --color: #333;
-            --border-color: #333;
+            --border-color: #999;
             --border-color-hover: red;
         }
+        .box{margin-bottom: 20px;display: flex}
     </style>
 </head>
 <body>
@@ -46,10 +47,19 @@
           </b-button>
      </b-button-group>
      <div id="test"></div>
+   <div class="box" >
+     <b-input value="张三" disabled></b-input>
+     <b-input value="哈哈哈" readonly ></b-input>
+     <b-input value="李四" ></b-input>
+   </div>
+  <div class="box">
+    <b-input value="李四" error="姓名不能为空"></b-input>
+  </div>
+
 
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_2374570_d2omr076vxw.js"></script>
+<script src="//at.alicdn.com/t/font_2374570_8ixew230sc.js"></script>
 
 </body>
 </html>
