@@ -53,7 +53,8 @@
      <b-input value="李四" @change="inputChange"></b-input>
    </div>
   <div class="box">
-    <b-input value="李四" error="姓名不能为空"></b-input>
+    <b-input value="李四" error="姓名不能为空" v-model="message"></b-input>
+    {{message}}
   </div>
 
 

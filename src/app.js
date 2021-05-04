@@ -13,7 +13,8 @@ new Vue({
     data(){
         return{
             test:'223',
-            loading1:false
+            loading1:false,
+            message:'333'
         }
     },
   methods:{
