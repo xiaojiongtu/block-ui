@@ -28,11 +28,17 @@
 </head>
 <body>
 <div id="app">
-   <b-row>
+   <b-row gutter="20">
       <b-col span="2">1</b-col>
-      <b-col span="20">2</b-col>
-      <b-col span="2">3</b-col>
+      <b-col span="18">2</b-col>
+      <b-col span="4">3</b-col>
    </b-row>
+  <b-row gutter="20">
+    <b-col>1</b-col>
+    <b-col >2</b-col>
+    <b-col>3</b-col>
+    <b-col >3</b-col>
+  </b-row>
    <hr>
     <b-button class="b-button" :loading="loading1" @click="loading1=!loading1">
         按钮
