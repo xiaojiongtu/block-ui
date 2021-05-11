@@ -1,9 +1,6 @@
 <template>
- <div class="col" :class="[`col-${span}` ,offset && `offset-${offset}`]" :style="{paddingLeft:gutter/2+'px',paddingRight:gutter/2+'px'}">
-    <div style="border: 1px solid;">
+ <div class="col" :class="codeClass" :style="codeStyle">
       <slot></slot>
-    </div>
-
  </div>
 </template>
 
@@ -22,7 +19,18 @@ export default {
     return{
       gutter:''
     }
-  }
+  },
+  computed:{
+     codeClass(){
+       return [this.span &&`col-${this.span}` ,this.offset && `offset-${this.offset}`]
+     },
+    codeStyle(){
+       return {
+         paddingLeft:this.gutter/2+'px',
+         paddingRight:this.gutter/2+'px'
+       }
+    }
+  },
 }
 </script>
 
